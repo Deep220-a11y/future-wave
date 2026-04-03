@@ -16,23 +16,9 @@
             background-color: #333;
             padding: 15px;
             text-align: center;
+            position: sticky;
+            top: 0;
         }
-        .banner-text {
-    background-color: #00a8ff;
-    color: white;
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.banner-text h2 {
-    margin: 0;
-    font-size: 28px;
-}
-
-.banner-text p {
-    margin-top: 10px;
-    font-size: 18px;
-}
 
         .navbar a {
             color: white;
@@ -54,10 +40,22 @@
             margin: 0;
         }
 
-        /* Banner Image */
-        .banner {
-            width: 100%;
-            height: auto;
+        /* Banner */
+        .banner-text {
+            background-color: #00a8ff;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .banner-text h2 {
+            margin: 0;
+            font-size: 30px;
+        }
+
+        .banner-text p {
+            margin-top: 10px;
+            font-size: 18px;
         }
 
         /* Sections */
@@ -98,49 +96,56 @@
     <!-- Navbar -->
     <div class="navbar">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
 
     <!-- Header -->
     <h1>Future Wave Technologies</h1>
 
-    <!-- Banner Image -->
+    <!-- Banner -->
     <div class="banner-text">
-    <h2>Innovating the Future</h2>
-    <p>Your trusted technology partner</p>
-</div>
+        <h2>Innovating the Future</h2>
+        <p>Your trusted technology partner</p>
+    </div>
 
     <!-- About -->
-    <div class="section">
+    <div class="section" id="about">
         <h2>About Us</h2>
-        <p>Future Wave Technologies is a modern tech company focused on delivering innovative digital solutions. We aim to help businesses grow through technology.</p>
+        <p>
+        Future Wave Technologies is a leading IT solutions company focused on delivering innovative and efficient digital services. 
+        Our mission is to empower businesses with modern technology and help them grow in the digital world.
+        </p>
     </div>
 
     <!-- Services -->
-    <div class="section">
+    <div class="section" id="services">
         <h2>Services</h2>
         <ul>
-            <li>Web Development</li>
-            <li>App Development</li>
-            <li>UI/UX Design</li>
-            <li>Cloud Solutions</li>
+            <li>Web Development – Creating responsive and modern websites</li>
+            <li>App Development – Building mobile applications</li>
+            <li>UI/UX Design – Designing user-friendly interfaces</li>
+            <li>Cloud Solutions – Secure and scalable cloud services</li>
         </ul>
     </div>
 
     <!-- Projects -->
-    <div class="section">
+    <div class="section" id="projects">
         <h2>Projects</h2>
-        <p>We have worked on multiple innovative projects including websites, mobile apps, and software solutions for startups and businesses.</p>
+        <p>
+        We have successfully developed various projects including business websites, student portals, and mobile apps 
+        that help organizations improve their digital presence.
+        </p>
     </div>
 
     <!-- Contact -->
-    <div class="section">
+    <div class="section" id="contact">
         <h2>Contact</h2>
         <p>Email: futurewave@gmail.com</p>
         <p>Phone: 9876543210</p>
+        <p>Location: Chennai, India</p>
     </div>
 
     <!-- Footer -->
