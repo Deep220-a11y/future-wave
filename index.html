@@ -4,11 +4,14 @@
     <title>Future Wave</title>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             font-family: Arial;
-            background-color: #f4f4f4;
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
             margin: 0;
-            padding: 0;
         }
 
         /* Navbar */
@@ -42,50 +45,76 @@
 
         /* Banner */
         .banner-text {
-            background-color: #00a8ff;
+            background: linear-gradient(to right, #00a8ff, #0077b6);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 80px 20px;
+            animation: fadeIn 2s;
         }
 
-        .banner-text h2 {
-            margin: 0;
-            font-size: 30px;
-        }
-
-        .banner-text p {
-            margin-top: 10px;
-            font-size: 18px;
+        /* Animation */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
         }
 
         /* Sections */
         .section {
-            background-color: white;
-            margin: 20px;
-            padding: 20px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-
-        .section:hover {
-            transform: scale(1.02);
+            margin: 30px;
+            animation: fadeIn 1.5s;
         }
 
         h2 {
             color: #0a3d62;
         }
 
-        ul {
-            padding-left: 20px;
+        /* Cards */
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            flex: 1;
+            min-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Button */
+        .btn {
+            background: #0a3d62;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #0077b6;
+        }
+
+        /* Contact form */
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
         }
 
         /* Footer */
         .footer {
-            background-color: #333;
+            background: #333;
             color: white;
             text-align: center;
             padding: 15px;
-            margin-top: 20px;
         }
     </style>
 
@@ -99,58 +128,79 @@
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
         <a href="#contact">Contact</a>
     </div>
 
     <!-- Header -->
     <h1>Future Wave Technologies</h1>
+    <p style="text-align:center;">Created by Deepikha | 1st Year IT</p>
 
     <!-- Banner -->
     <div class="banner-text">
         <h2>Innovating the Future</h2>
         <p>Your trusted technology partner</p>
+        <button class="btn">Explore More</button>
     </div>
 
     <!-- About -->
     <div class="section" id="about">
         <h2>About Us</h2>
-        <p>
-        Future Wave Technologies is a leading IT solutions company focused on delivering innovative and efficient digital services. 
-        Our mission is to empower businesses with modern technology and help them grow in the digital world.
-        </p>
+        <p>We provide innovative tech solutions to help businesses grow digitally.</p>
     </div>
 
     <!-- Services -->
     <div class="section" id="services">
-        <h2>Services</h2>
-        <ul>
-            <li>Web Development – Creating responsive and modern websites</li>
-            <li>App Development – Building mobile applications</li>
-            <li>UI/UX Design – Designing user-friendly interfaces</li>
-            <li>Cloud Solutions – Secure and scalable cloud services</li>
-        </ul>
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Modern responsive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>App Development</h3>
+                <p>Mobile app solutions.</p>
+            </div>
+
+            <div class="card">
+                <h3>UI/UX Design</h3>
+                <p>User-friendly designs.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Projects -->
     <div class="section" id="projects">
         <h2>Projects</h2>
-        <p>
-        We have successfully developed various projects including business websites, student portals, and mobile apps 
-        that help organizations improve their digital presence.
-        </p>
+        <p>We have developed multiple successful digital products.</p>
+    </div>
+
+    <!-- Team -->
+    <div class="section" id="team">
+        <h2>Our Team</h2>
+        <div class="cards">
+            <div class="card">Deepikha – Frontend</div>
+            <div class="card">Member 2 – Backend</div>
+            <div class="card">Member 3 – Designer</div>
+        </div>
     </div>
 
     <!-- Contact -->
     <div class="section" id="contact">
-        <h2>Contact</h2>
-        <p>Email: futurewave@gmail.com</p>
-        <p>Phone: 9876543210</p>
-        <p>Location: Chennai, India</p>
+        <h2>Contact Us</h2>
+
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+        <br><br>
+        <button class="btn">Send</button>
     </div>
 
     <!-- Footer -->
     <div class="footer">
-        <p>© 2026 Future Wave Technologies | All Rights Reserved</p>
+        © 2026 Future Wave Technologies
     </div>
 
 </body>
