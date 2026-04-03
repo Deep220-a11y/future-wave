@@ -2,64 +2,132 @@
 <html>
 <head>
     <title>Future Wave</title>
+
     <style>
-    body {
-        font-family: Arial;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: Arial;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-    h1 {
-        background-color: #0a3d62;
-        color: white;
-        padding: 20px;
-        text-align: center;
-    }
+        /* Navbar */
+        .navbar {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+        }
 
-    h2 {
-        color: #0a3d62;
-        margin-left: 20px;
-    }
+        .navbar a {
+            color: white;
+            margin: 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    p, ul {
-        margin-left: 20px;
-        font-size: 16px;
-    }
+        .navbar a:hover {
+            color: #00a8ff;
+        }
 
-    ul {
-        list-style-type: square;
-    }
+        /* Header */
+        h1 {
+            background-color: #0a3d62;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin: 0;
+        }
 
-    hr {
-        margin: 20px;
-    }
-</style>
+        /* Banner Image */
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Sections */
+        .section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .section:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #0a3d62;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
 
 <body>
 
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Header -->
     <h1>Future Wave Technologies</h1>
-    <p>Welcome to our company website</p>
 
-    <hr>
+    <!-- Banner Image -->
+    <img src="https://via.placeholder.com/1200x400" class="banner">
 
-    <h2>About Us</h2>
-    <p>We are a tech company providing innovative solutions in web development and software services.</p>
+    <!-- About -->
+    <div class="section">
+        <h2>About Us</h2>
+        <p>Future Wave Technologies is a modern tech company focused on delivering innovative digital solutions. We aim to help businesses grow through technology.</p>
+    </div>
 
-    <h2>Services</h2>
-    <ul>
-        <li>Web Development</li>
-        <li>App Development</li>
-        <li>UI/UX Design</li>
-    </ul>
+    <!-- Services -->
+    <div class="section">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>App Development</li>
+            <li>UI/UX Design</li>
+            <li>Cloud Solutions</li>
+        </ul>
+    </div>
 
-    <h2>Projects</h2>
-    <p>We have worked on multiple projects for clients and startups.</p>
+    <!-- Projects -->
+    <div class="section">
+        <h2>Projects</h2>
+        <p>We have worked on multiple innovative projects including websites, mobile apps, and software solutions for startups and businesses.</p>
+    </div>
 
-    <h2>Contact</h2>
-    <p>Email: futurewave@gmail.com</p>
-    <p>Phone: 9876543210</p>
+    <!-- Contact -->
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: futurewave@gmail.com</p>
+        <p>Phone: 9876543210</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2026 Future Wave Technologies | All Rights Reserved</p>
+    </div>
 
 </body>
 </html>
